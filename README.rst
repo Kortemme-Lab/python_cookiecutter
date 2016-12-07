@@ -20,6 +20,7 @@ Making a new application
 Just give ``cookiecutter`` the path to this repository and answer all of its 
 questions::
 
+   $ pip install cookiecutter
    $ cookiecutter https://github.com/Kortemme-Lab/python_cookiecutter.git
 
 If you find yourself using this cookiecutter a lot, you can save yourself some 
