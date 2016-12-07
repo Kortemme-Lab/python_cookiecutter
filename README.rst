@@ -32,9 +32,10 @@ Publishing to PyPI
 ==================
 When you want to publish a version of your application to PyPI, the first step 
 is to increment the version number stored in ``__init__.py`` and to commit that 
-with a tag that matches the new version.  You can do using the ``bumpversion`` 
-command (pre-installed in the virtual environment) to do this automatically::
+with a tag that matches the new version.  You can use the ``bumpversion`` 
+command to do this automatically::
 
+   $ pip install bumpversion
    $ bumpversion major
    $ bumpversion minor
    $ bumpversion patch
@@ -46,8 +47,8 @@ your project, run this command before anything else::
 
 This command will ask for your PyPI login credentials unless you've already 
 provided them in your ``~/.pypirc`` file, which is probably worthwhile if 
-you're creating enough new project to warrant using ``cookiecutter``.  Once 
-your project is registered, upload it with the following command::
+you're creating new projects often enough to warrant using ``cookiecutter``.  
+Once your project is registered, upload it with the following command::
 
    $ python setup.py sdist upload
 
@@ -56,8 +57,7 @@ Not Exactly What You Want?
 If you have differences in your preferred setup, I encourage you to fork this
 to create your own version.  Or create your own; it doesn't strictly have to
 be a fork.  It's up to you whether or not to rename your fork/own version. Do 
-whatever you think sounds good.  I'll also accept pull requests if they're 
-small, atomic, and if they make my own development experience better.
+whatever you think sounds good.
 
 .. _Travis-CI: http://travis-ci.org/
 .. _Sphinx: http://sphinx-doc.org/
