@@ -2,7 +2,7 @@
 cookiecutter_pyapp
 ******************
 
-A cookiecutter template for my python applications.  See 
+A cookiecutter template for python applications.  See 
 https://github.com/audreyr/cookiecutter.  This cookiecutter will::
 
 1. Create a ``setup.py`` file that's immediately ready to use.
